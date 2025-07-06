@@ -1,15 +1,14 @@
 "use client";
 
-export default function SectionOne() {
+export default function about() {
   return (
-    <div className="space-y-12 pt-6 bg-[#fbf8cc] rounded-lg pb-5">
-      {/* Première section en grille */}
+    <div className="space-y-12 pt-6 bg-transparent rounded-lg pb-5">
       <div className="grid grid-cols-6 gap-10">
         <div className="col-span-4 col-start-2">
           <img src="/assets/11.png" alt="About us banner" className="w-full h-auto object-cover" />
         </div>
 
-        <div className="col-start-2 col-end-4 text-center title font-bold">
+        <div className="italic col-start-2 col-end-4 text-center title font-bold">
           About us
         </div>
 

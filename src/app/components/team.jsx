@@ -1,8 +1,11 @@
 "use client";
 
-export default function Sectiontwo(){
+export default function Team(){
     return (
- 
+ <div>
+      <h2 className="font-extrabold title mb-6 text-center animate-bounce">
+        Meet our Mascots
+      </h2>
     <div className="pl-2 pr-2 grid grid-cols-3 gap-5">  
       
 
@@ -17,17 +20,17 @@ export default function Sectiontwo(){
       <div className="galleria overflow-hidden border shadow-lg rounded-lg">
         <div className="h-1/2">
           <img
-            src="/assets/3.png"
+            src="/sprite/4.png"
             alt="Banner"
             className="object-cover w-full h-full"
           />
         </div>
 
       <div className="h-1/2 p-4 bg-white">
-        <h2 className="text-4xl text-[#e76f51] pb-3 ">Title or Heading</h2>
-        <p className="paragraph">
-          This is the description text that goes under the image. You can write any content here to describe the banner.
-        </p>
+        <h2 className="text-4xl text-[#e76f51] pb-3 ">Froggo</h2>
+        <div className="paragraph">
+          Froggo is an adorable and fierce little frog living his happy life with his girlfriend, Froggie in their mushroom.
+        </div>
       </div>
     </div>
   </div>
@@ -49,17 +52,17 @@ export default function Sectiontwo(){
       <div className="galleria overflow-hidden border shadow-lg rounded-lg">
         <div className="h-1/2">
           <img
-            src="/assets/3.png"
+            src="/sprite/3.png"
             alt="Banner"
             className="object-cover w-full h-full"
           />
         </div>
 
       <div className="h-1/2 p-4 bg-white">
-        <h2 className="text-4xl text-[#e76f51] pb-3 ">Title or Heading</h2>
-        <p className="paragraph">
-          This is the description text that goes under the image. You can write any content here to describe the banner.
-        </p>
+        <h2 className="text-4xl text-[#e76f51] pb-3 ">Froggie</h2>
+        <div className="paragraph">
+          The cutest of all ! meet Froggie, the sassy and beautiful frog of the swamp. Very in love with her boyfriend, Froggo.
+        </div>
       </div>
     </div>
   </div>
@@ -77,17 +80,17 @@ export default function Sectiontwo(){
       <div className="galleria overflow-hidden border shadow-lg rounded-lg">
         <div className="h-1/2">
           <img
-            src="/assets/3.png"
+            src="/sprite/6.png"
             alt="Banner"
             className="object-cover w-full h-full"
           />
         </div>
 
       <div className="h-1/2 p-4 bg-white">
-        <h2 className="text-4xl text-[#e76f51] pb-3 ">Title or Heading</h2>
-        <p className="paragraph">
-          This is the description text that goes under the image. You can write any content here to describe the banner.
-        </p>
+        <h2 className="text-4xl text-[#e76f51] pb-3 ">Sally</h2>
+        <div className="paragraph">
+          Sally is the most chill snail you'll ever know.
+        </div>
       </div>
     </div>
   </div>
@@ -95,7 +98,7 @@ export default function Sectiontwo(){
 
 </div>
 
-
+</div>
 
 
 

@@ -7,12 +7,22 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: "Rancho", sans-serif;
+    background-image:
+    url('/assets/kawaii-pattern.svg'),
+    repeating-linear-gradient(to bottom, #fff7fb 0px, #fff7fb 23px, #d0eaff 24px),
+    linear-gradient(to right, #ffc0cb 45px, transparent 45px);
+  background-repeat: repeat;
+  background-size: auto, 100% 24px, 100% 100%;
+  background-position: center;
+  background-color: #fff7fb;
+}
+.nav-butt{
+  @apply
+  bg-transparent hover:bg-[#ffddd2] text-black font-bold text-xl tracking-[.10em] py-2 px-4 rounded
 }
 
-  .header-G{
+.header-G{
     @apply
     flex 
     flex-col 
@@ -20,22 +30,35 @@ body {
     items-center 
     justify-between 
     p-30 
-    bg-white/25 
+    bg-transparent
     text-black;
-  }
+}
 
-  .title{
+.carte{
+  @apply 
+  border bg-white shadow-lg rounded-2xl p-4 hover:shadow-xl transition
+}
+
+
+.title{
     @apply
     text-4xl
-    text-black
-  }
-  .paragraph{
+    text-[#252422]
+}
+
+.title2{
+    @apply
+    text-4xl
+    text-[#72bbce]
+}
+
+.paragraph{
     @apply
     text-2xl
-    text-black
-  }
+    text-[#252422]
+}
 
-  .galleria{
+.galleria{
     @apply
     w-full 
     max-w-md 
@@ -46,28 +69,68 @@ body {
     shadow-lg 
     h-96 flex 
     flex-col
-  }
+}
 
-  .headButt{
-    @apply
-    bg-transparent 
-    hover:bg-[#fcb9b2] 
-    text-[#461220] 
+.headButt {
+  @apply 
+    bg-[#ffddd2]
+    text-[#252422]
     font-semibold 
-    hover:text-white 
-    py-2 px-4 border 
-    border-[#461220] 
-    hover:border-transparent 
-    rounded
-    w-50
-    text-2xl
-  }
+    py-2 px-4  
+    rounded 
+    w-50 
+    text-2xl 
+    transition-all 
+    duration-500 
+    ease-in-out 
+    relative 
+    overflow-hidden;
+}
 
-  .gamebutt{
+.footLink{
+  @apply
+  text-2xl hover:text-pink-500 transition
+}
+
+/* Gradient animé au hover */
+.headButt::before {
+  content: "";
+  @apply absolute inset-0 rounded;
+  background: linear-gradient(to right, #ffceff, #ffb7ff, #e498ff, #b66ee8,#a564d3 );
+  background-size: 200% 200%;
+  color:#ededed;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.headButt:hover::before {
+  opacity: 1;
+  animation: gradientMove 4s linear infinite;
+}
+
+/* Pour que le texte reste au-dessus */
+.headButt span {
+  @apply relative z-10;
+}
+
+/* Animation de gradient */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.gamebutt{
     @apply
     bg-pink-500 w-100 h-10 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600 transition disabled:opacity-50
   }
 
+  
 
 
 @theme inline {
@@ -105,3 +168,61 @@ body {
   animation: vibrate 0.3s linear infinite;
 }
 
+
+    @keyframes snailWalk {
+      0% {
+        left: 100%;
+        transform: translateY(0px) scaleX(1);
+      }
+      25% {
+        transform: translateY(2px) scaleX(1);
+      }
+      50% {
+        left: 0%;
+        transform: translateY(0px) scaleX(-1);
+      }
+      75% {
+        transform: translateY(2px) scaleX(-1);
+      }
+      100% {
+        left: 100%;
+        transform: translateY(0px) scaleX(1);
+      }
+    }
+
+    .snail-walk {
+      animation-name: snailWalk;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      position: relative;
+      display: inline-block;
+    }
+
+
+
+
+
+    .cloud {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.8;
+  pointer-events: none;
+  animation-name: floatCloud;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatCloud {
+  0% {
+    transform: translateX(0vw) translateY(0px);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-10px);
+  }
+  100% {
+    transform: translateX(100vw) translateY(0px);
+  }
+}

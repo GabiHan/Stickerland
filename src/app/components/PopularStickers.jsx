@@ -40,39 +40,15 @@ export default function PopularStickers() {
 
   return (
     <section className="my-10 px-4">
-      <div className="
-      pl-5 
-      bg-[#fbf8cc]
-      inset-shadow-sm 
-      inset-shadow-indigo-500 
-      title 
-      font-bold 
-      flex items-center
-      gap-2 
-      pt-7 
-      w-100 
-      h-auto
-      rounded-lg
-      ">
-    
-  <span className="pl-20">Popular stickers</span>
-  <img
-    className="w-12 h-auto"
-    src="/assets/10.png"
-    alt="us"
-  />
-
-</div>
-
 
       <div
         ref={containerRef}
-        className="flex space-x-4 overflow-hidden scroll-smooth pt-5"
+        className="flex space-x-4 overflow-hidden scroll-smooth pt-15 pb-15"
       >
         {stickers.map((sticker) => (
           <div
             key={sticker.id}
-            className="flex-none w-100 h-auto bg-white rounded-2xl shadow-lg p-4 transition-all duration-300 hover:scale-105"
+            className="border paragraph flex-none w-100 h-auto bg-white rounded-2xl shadow-lg p-4 transition-all duration-300 hover:scale-105"
           >
             <img
               src={sticker.img}
