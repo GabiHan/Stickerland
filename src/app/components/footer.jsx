@@ -16,8 +16,8 @@ export default function Footer(){
             <h4 className="title">Navigation</h4>
             <br />
             <ul className="space-y-2 text-sm">
-                <li><a href="/gallerie" className="footLink">Galerie</a></li>
-                <li><a href="/game" className="footLink">Mini-jeux</a></li>
+                <li><a href="/gallerie" className="footLink">Galery</a></li>
+                <li><a href="/game" className="footLink">Mini-game</a></li>
                 <li><a href="#" className="footLink">Contact</a></li>
             </ul>
             </div>
