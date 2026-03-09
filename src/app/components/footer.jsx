@@ -4,8 +4,7 @@ export default function Footer(){
     return(
         <footer className="mt-20 bg-[#fde4cf] text-gray-800 py-10 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Logo / Présentation rapide */}
+
             <div>
             <h3 className="text-4xl font-bold text-pink-600 mb-2">Stickerland</h3>
             <div className="paragraph">
@@ -13,7 +12,6 @@ export default function Footer(){
             </div>
             </div>
 
-            {/* Liens rapides */}
             <div>
             <h4 className="title">Navigation</h4>
             <br />
@@ -24,7 +22,6 @@ export default function Footer(){
             </ul>
             </div>
 
-                {/* 📬 Contact Me Section */}
                 <div>
                 <h4 className="title">Contact me</h4>
                 <p className="paragraph mt-2">
@@ -42,7 +39,6 @@ export default function Footer(){
 
         </div>
 
-        {/* Mention en bas */}
         <br /><br />
         <div className="paragraph text-center">
             © 2025 Stickerland All rights reserved.

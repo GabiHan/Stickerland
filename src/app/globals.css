@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
 @import "tailwindcss";
 
 :root {
@@ -7,7 +6,8 @@
 }
 
 body {
-  font-family: "Rancho", sans-serif;
+
+  font-family: var(--font-rancho), sans-serif;
     background-image:
     url('/assets/kawaii-pattern.svg'),
     repeating-linear-gradient(to bottom, #fff7fb 0px, #fff7fb 23px, #d0eaff 24px),
