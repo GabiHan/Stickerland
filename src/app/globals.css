@@ -7,7 +7,7 @@
 
 body {
 
-  font-family: var(--font-rancho), sans-serif;
+  font-family: var(--font-rancho), cursive !important;
     background-image:
     url('/assets/kawaii-pattern.svg'),
     repeating-linear-gradient(to bottom, #fff7fb 0px, #fff7fb 23px, #d0eaff 24px),
