@@ -9,7 +9,7 @@ export default function Footer(){
             <div>
             <h3 className="text-4xl font-bold text-pink-600 mb-2">Stickerland</h3>
             <div className="paragraph">
-                the adorable world of stickers with fun mini-games to discover ! 
+                The adorable world of stickers with fun mini-games to discover ! 
             </div>
             </div>
 
@@ -35,7 +35,7 @@ export default function Footer(){
                     href="mailto:your-email@example.com"
                     className="text-2xl underline hover:text-pink-700"
                     >
-                    mimicornwuv@gmail.com
+                    gabihantanirina@gmail.com
                     </a>
                 </p>
                 </div>

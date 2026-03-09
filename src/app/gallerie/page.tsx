@@ -14,8 +14,8 @@ export default function Gallerie() {
     { name: "Cloudy Moon", type: "Weather", img: "/assets/4.png" },
     { name: "Unicorn", type: "Animal", img: "/assets/5.png" },
     { name: "Star", type: "Symbol", img: "/assets/6.png" },
-    { name: "Rainbow", type: "Weather", img: "/assets/7.png" },
-    { name: "Kitten", type: "Animal", img: "/assets/8.png" },
+    { name: "Swamp", type: "Froggie in swamp", img: "/assets/11.png" },
+    { name: "Woods", type: "Forest", img: "/assets/15.png" },
     { name: "Bubble", type: "Abstract", img: "/assets/9.png" },
   ];
 

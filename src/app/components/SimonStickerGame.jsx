@@ -86,11 +86,8 @@ export default function SimonStickerGame() {
 
   return (
     <div className="min-h-screen bg-transparent">
-      {/* NAVBAR */}
       <nav className="w-full bg-transparent shadow-md h-20 px-10 py-3 flex items-center justify-between sticky top-0 z-50">
-        
-        
-              {/* Escargot animé en bas de la navbar */}
+      
       <div className="absolute z-50" style={{ top: '55px', left: 0, right: 0, height: '40px', pointerEvents: 'none' }}>
         <img
           src="/sprite/7.png"
@@ -103,13 +100,11 @@ export default function SimonStickerGame() {
         />
       </div>
 
-        {/* Logo flottant à gauche */}
         <div className="flex items-center gap-2">
           <img src="logo.png" alt="Logo" className="w-40 h-auto" />
           
         </div>
 
-        {/* Niveau + Score */}
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <label className="paragraph">Niveau</label>
@@ -130,7 +125,6 @@ export default function SimonStickerGame() {
         </div>
       </nav>
 
-      {/* CONTENU */}
       <div className="flex flex-col items-center pt-10 px-4">
         <h1 className="title pb-10">Mimi Saysssss....</h1>
         <div className="grid grid-cols-3 gap-6 mb-6">
