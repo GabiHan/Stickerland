@@ -4,7 +4,7 @@ export default function New(){
     return(
   <section className="mt-16 px-4">
   <h2 className="font-extrabold title mb-6 text-center animate-bounce">
-   Nouveautés à découvrir !
+   Discovery !
   </h2>
 <br />
   <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -36,7 +36,7 @@ export default function New(){
         className="w-full h-40 object-contain mb-3"
       />
       <h3 className="title">Licorne Chill</h3>
-      <div className="paragraph">Nouvelle arrivée dans Stickerland !</div>
+      <div className="paragraph">Newcomers in stickerland !</div>
     </div>
   </div>
 </section>

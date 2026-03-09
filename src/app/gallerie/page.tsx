@@ -31,7 +31,7 @@ export default function Gallerie() {
       <div className="h-15"></div>
 
       <section className="px-6 py-10 max-w-7xl mx-auto">
-        <h2 className="font-extrabold title mb-6 text-center animate-bounce">Galerie de Stickers</h2>
+        <h2 className="font-extrabold title mb-6 text-center animate-bounce">Sticker gallery</h2>
 
       {/* 🔍 Barre de recherche */}
       <div className="mb-6 flex justify-end">
@@ -64,7 +64,7 @@ export default function Gallerie() {
 
         {filtered.length === 0 && (
           <p className="text-center text-gray-500 mt-10">
-            Aucun sticker ne correspond à votre recherche.
+            Not found
           </p>
         )}
       </section>
